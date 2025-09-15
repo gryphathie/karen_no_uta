@@ -1,0 +1,190 @@
+/* Romantic Navbar Styles */
+.romantic-navbar {
+  background: linear-gradient(135deg, #ffffff 0%, #fef7f7 100%);
+  border-bottom: 2px solid #f0e6e6;
+  box-shadow: 0 2px 20px rgba(255, 182, 193, 0.1);
+  padding: 1rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Flower decoration background */
+.romantic-navbar::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #ffb6c1 20%, transparent 20%);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: float 6s ease-in-out infinite;
+}
+
+.romantic-navbar::after {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 10%;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #ffc0cb 30%, transparent 30%);
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+/* Floating animation for flower decorations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(180deg);
+  }
+}
+
+/* Brand styling */
+.romantic-brand {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #d4a5a5 !important;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(255, 182, 193, 0.3);
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.romantic-brand:hover {
+  color: #c49595 !important;
+  text-shadow: 2px 2px 4px rgba(255, 182, 193, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Navigation links */
+.romantic-nav {
+  position: relative;
+  z-index: 2;
+}
+
+.romantic-nav .nav-link {
+  color: #b8a8a8 !important;
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.romantic-nav .nav-link:hover {
+  color: #d4a5a5 !important;
+  background: linear-gradient(135deg, #ffe4e1 0%, #f0e6e6 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.2);
+}
+
+.romantic-nav .nav-link.active {
+  color: #c49595 !important;
+  background: linear-gradient(135deg, #ffb6c1 0%, #ffc0cb 100%);
+  box-shadow: 0 2px 10px rgba(255, 182, 193, 0.3);
+}
+
+/* Container styling */
+.romantic-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .romantic-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .romantic-nav .nav-link {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .romantic-navbar::before,
+  .romantic-navbar::after {
+    display: none;
+  }
+}
+
+/* Additional romantic elements */
+.romantic-navbar .container {
+  position: relative;
+}
+
+/* Subtle heart decoration */
+.romantic-navbar .container::before {
+  content: '💕';
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  opacity: 0.6;
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.1);
+  }
+}
+
+/* Navbar toggle button styling */
+.romantic-navbar .navbar-toggler {
+  border: 2px solid #d4a5a5 !important;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  background: linear-gradient(135deg, #ffffff 0%, #fef7f7 100%) !important;
+  box-shadow: 0 2px 8px rgba(255, 182, 193, 0.2);
+  transition: all 0.3s ease;
+  margin-left: auto;
+  order: 2;
+}
+
+.romantic-navbar .navbar-toggler:hover {
+  background: linear-gradient(135deg, #ffe4e1 0%, #f0e6e6 100%);
+  border-color: #c49595;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+  transform: translateY(-1px);
+}
+
+.romantic-navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 182, 193, 0.25);
+  border-color: #c49595;
+}
+
+.romantic-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23d4a5a5' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* Mobile heart decoration */
+@media (max-width: 768px) {
+  .romantic-navbar .container::before {
+    display: none;
+  }
+  
+  .romantic-navbar .navbar-toggler {
+    margin-left: auto;
+  }
+}
