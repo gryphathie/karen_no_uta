@@ -67,14 +67,78 @@
   animation: heartbeat 2s ease-in-out infinite;
 }
 
+/* Chapter header image styling */
+.romantic-chapter-header-image {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 3rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+.romantic-chapter-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(212, 165, 165, 0.3);
+  border: 3px solid rgba(255, 182, 193, 0.2);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.romantic-chapter-image:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(212, 165, 165, 0.4);
+  border-color: rgba(255, 182, 193, 0.4);
+}
+
+/* Decorative overlay for chapter images */
+.romantic-chapter-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg, 
+    rgba(255, 182, 193, 0.1) 0%, 
+    transparent 50%, 
+    rgba(255, 192, 203, 0.1) 100%
+  );
+  border-radius: 17px;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.romantic-chapter-image:hover::before {
+  opacity: 0.7;
+}
+
 /* Card container for content */
 .romantic-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 3rem;
   position: relative;
   z-index: 2;
+}
+
+/* Footer cards container - full width */
+.romantic-cards-container:has(.romantic-footer-card) {
+  grid-template-columns: 1fr;
+}
+
+/* Footer card styling */
+.romantic-footer-card {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: none;
 }
 
 /* Individual card styling */
@@ -231,6 +295,15 @@
 }
 
 /* Responsive design */
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .romantic-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .romantic-chapter-title {
     font-size: 2.2rem;
@@ -242,6 +315,15 @@
     font-size: 1.2rem;
     top: -8px;
     right: -30px;
+  }
+  
+  .romantic-chapter-header-image {
+    margin: 1.5rem 0 2rem 0;
+  }
+  
+  .romantic-chapter-image {
+    max-height: 300px;
+    border-radius: 15px;
   }
   
   .romantic-cards-container {
@@ -287,6 +369,15 @@
   .romantic-chapter-title {
     font-size: 1.8rem;
     letter-spacing: 1px;
+  }
+  
+  .romantic-chapter-header-image {
+    margin: 1rem 0 1.5rem 0;
+  }
+  
+  .romantic-chapter-image {
+    max-height: 250px;
+    border-radius: 12px;
   }
   
   .romantic-card {

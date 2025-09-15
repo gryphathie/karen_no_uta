@@ -8,13 +8,22 @@ function Chapter1() {
         <div className="romantic-chapter-container">
             <AudioPlayer 
                 src="/music/chapter1/background-music.mp3"
-                title="Chapter 1 - The Beginning"
+                title="Chapter 1 - Virtuous Heart"
                 autoPlay={false}
                 loop={true}
                 volume={0.3}
             />
             <Container>
                 <h1 className="romantic-chapter-title">Chapter 1</h1>
+                
+                {/* Chapter header image */}
+                <div className="romantic-chapter-header-image">
+                    <img 
+                        src="/images/chapter1/header-image.jpg" 
+                        alt="Chapter 1 - The Beginning" 
+                        className="romantic-chapter-image"
+                    />
+                </div>
                 
                 <div className="romantic-cards-container">
                     {/* Example card with text content */}
@@ -25,7 +34,8 @@ function Chapter1() {
                                 Memorias y recuerdos de Karen de cuando iniciamos nuestera relacion.
                                 Luciernagas.
                                 Salida al centro
-                                Primer beso                                
+                                Primer beso    
+                                Autocinema - declaracion                            
                             </p>
                         </div>
                     </div>
@@ -73,7 +83,7 @@ function Chapter1() {
 
                 {/* Additional content section */}
                 <div className="romantic-cards-container">
-                    <div className="romantic-card">
+                    <div className="romantic-card romantic-footer-card">
                         <div className="romantic-card-content">
                             <h3 className="romantic-card-title">*Footer*</h3>
                             <p className="romantic-card-text">

@@ -16,14 +16,23 @@ function Chapter2() {
             <Container>
                 <h1 className="romantic-chapter-title">Chapter 2</h1>
                 
+                {/* Chapter header image */}
+                <div className="romantic-chapter-header-image">
+                    <img 
+                        src="/images/chapter2/header-image.jpg" 
+                        alt="Chapter 2 - The Travel" 
+                        className="romantic-chapter-image"
+                    />
+                </div>
+                
                 <div className="romantic-cards-container">
                     {/* Example card with text content */}
                     <div className="romantic-card">
                         <div className="romantic-card-content">
-                            <h3 className="romantic-card-title">The Traveler</h3>
+                            <h3 className="romantic-card-title">The Travel</h3>
                             <p className="romantic-card-text">
                                 Citas de viajes a donde fuimos, como 
-                                Cancun, tlahuapan, Cabañas malinche, Six flags, etc.
+                                Cancun, tlahuapan, Cabañas malinche, Six flags, Africam, Acuario,
                             </p>
                         </div>
                     </div>
@@ -71,7 +80,7 @@ function Chapter2() {
 
                 {/* Additional content section */}
                 <div className="romantic-cards-container">
-                    <div className="romantic-card">
+                    <div className="romantic-card romantic-footer-card">
                         <div className="romantic-card-content">
                             <h3 className="romantic-card-title">*Footer*</h3>
                             <p className="romantic-card-text">
