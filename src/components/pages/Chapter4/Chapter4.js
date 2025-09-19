@@ -7,8 +7,8 @@ function Chapter4() {
     return (
         <div className="romantic-chapter-container">
         <AudioPlayer 
-            src="/music/chapter2/background-music.mp3"
-            title="Chapter 4 - Unbound Future"
+            src="/music/chapter4/Dido - White flag.mp3"
+            title="Dido - White flag"
             autoPlay={false}
             loop={true}
             volume={0.3}
