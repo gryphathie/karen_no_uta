@@ -7,8 +7,8 @@ function Chapter3() {
     return (
         <div className="romantic-chapter-container">
         <AudioPlayer 
-            src="/music/chapter2/background-music.mp3"
-            title="Chapter 2 - The Traveler"
+            src="/music/chapter3/Taylor Swift - Lover.mp3"
+            title="Taylor Swift - Lover"
             autoPlay={false}
             loop={true}
             volume={0.3}

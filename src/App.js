@@ -2,10 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/navbar/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/pages/Home/Home';
 import Chapter1 from './components/pages/Chapter1/Chapter1';
 import Chapter2 from './components/pages/Chapter2/Chapter2';
 import Chapter3 from './components/pages/Chapter3/Chapter3';
 import Chapter4 from './components/pages/Chapter4/Chapter4';
+import Gallery from './components/pages/Gallery/Gallery';
 import Decisions from './components/pages/Decisions/Decisions';
 
 function App() {
@@ -14,11 +16,12 @@ function App() {
       <BrowserRouter basename="/karen_no_uta">
         <NavBar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/chapter1" element={<Chapter1 />} />
           <Route path="/chapter2" element={<Chapter2 />} />
           <Route path="/chapter3" element={<Chapter3 />} />
           <Route path="/chapter4" element={<Chapter4 />} />
-          <Route path="/gallery"  />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/decisions" element={<Decisions />} />
         </Routes>
       </BrowserRouter>

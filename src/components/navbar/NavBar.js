@@ -14,6 +14,10 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="romantic-nav ms-auto">
+                        <Nav.Link as={NavLink} to="/" className="nav-link">
+                            <span className="desktop-text">Home</span>
+                            <span className="mobile-text">Home</span>
+                        </Nav.Link>
                         <Nav.Link as={NavLink} to="/chapter1" className="nav-link">
                             <span className="desktop-text">Chapter 1</span>
                             <span className="mobile-text">C1</span>
