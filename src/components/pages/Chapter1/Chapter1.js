@@ -19,7 +19,7 @@ function Chapter1() {
                 {/* Chapter header image */}
                 <div className="romantic-chapter-header-image">
                     <img 
-                        src="/images/chapter1/header-image.jpg" 
+                        src="/images/cards/virtuous_heart.jpg" 
                         alt="Chapter 1 - The Beginning" 
                         className="romantic-chapter-image"
                     />

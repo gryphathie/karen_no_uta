@@ -24,6 +24,7 @@ function Gallery() {
                 "/images/gallery/campo3.jpg",
                 "/images/gallery/campo5.jpg",
                 "/images/gallery/bosque1.jpg",
+                "/images/gallery/bosque2.jpg",
                 "/images/gallery/mexico1.jpg",
                 "/images/gallery/mexico2.jpg",
                 "/images/gallery/mexico3.jpg",

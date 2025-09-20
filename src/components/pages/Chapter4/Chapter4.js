@@ -19,7 +19,7 @@ function Chapter4() {
             {/* Chapter header image */}
             <div className="romantic-chapter-header-image">
                 <img 
-                    src="/images/chapter3/header-image.jpg" 
+                    src="/images/cards/unbound_future.jpg" 
                     alt="Chapter 4 - Unbound Future" 
                     className="romantic-chapter-image"
                 />
