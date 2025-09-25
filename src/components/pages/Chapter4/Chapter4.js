@@ -42,7 +42,7 @@ function Chapter4() {
                         <h3 className="romantic-card-title">A Memory</h3>
                         <div className="romantic-image-container">
                             <img 
-                                src="/path/to/your/image.jpg" 
+                                src="/images/cards/flower.png" 
                                 alt="Description" 
                                 className="romantic-card-image"
                             />
@@ -81,10 +81,7 @@ function Chapter4() {
             <div className="romantic-cards-container">
                 <div className="romantic-card romantic-footer-card">
                     <div className="romantic-card-content">
-                        <h3 className="romantic-card-title">*Footer*</h3>
-                        <p className="romantic-card-text">
-                            Agregar footer de rosa
-                        </p>
+                        <img src="/images/cards/footer.png" alt="Footer" className="footer-image" />
                     </div>
                 </div>
             </div>

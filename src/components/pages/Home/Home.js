@@ -11,7 +11,7 @@ function Home() {
                         <h3 className="romantic-card-title">The Reason</h3>
                         <p className="romantic-card-text-home">
                             Esta es una "carta" que relata mi historia de amor con Karen.
-                            Esta carta cuenta desde mi punto de vista como se fue y a sido nuestra histori,
+                            Esta carta cuenta desde mi punto de vista como se fue y a sido nuestra historia,
                             Como me sentí a lo largo en nuestra relacion.
                             Se que te gustan mucho las cartas escritas pero creo que tenía que hacerlo a mi manera,
                             para que fuera un esfuerzo sincero. Aun así intenté combinar lo escrito con lo digital.

@@ -41,16 +41,16 @@ function Chapter3() {
                 {/* Example card with image */}
                 <div className="romantic-card">
                     <div className="romantic-card-content">
-                        <h3 className="romantic-card-title">A Memory</h3>
+                        <h3 className="romantic-card-title">Art</h3>
                         <div className="romantic-image-container">
                             <img 
-                                src="/path/to/your/image.jpg" 
+                                src="/images/cards/espeon.png" 
                                 alt="Description" 
                                 className="romantic-card-image"
                             />
                         </div>
                         <p className="romantic-card-text">
-                            Fotos de momentos lindos de esos días
+                            
                         </p>
                     </div>
                 </div>
@@ -83,10 +83,7 @@ function Chapter3() {
             <div className="romantic-cards-container">
                 <div className="romantic-card romantic-footer-card">
                     <div className="romantic-card-content">
-                        <h3 className="romantic-card-title">*Footer*</h3>
-                        <p className="romantic-card-text">
-                            Agregar footer de rosa
-                        </p>
+                        <img src="/images/cards/footer.png" alt="Footer" className="footer-image" />
                     </div>
                 </div>
             </div>
