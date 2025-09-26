@@ -19,7 +19,7 @@ function Home() {
                             o que de alguna forma definen el como me sentía.
                         </p>                            
                         <p className="romantic-card-text-home">
-                            Tal vez pensaras: Que raro que me hagan una app cuando una carta de 269 paginas era suficiente. 
+                            Tal vez pensaras: Qué raro que me hagan una app cuando una carta de 269 paginas era suficiente. 
                             Pero la verdad quise tomar algo que me contaste, dijiste que en Disney no tenías mis cartas para recordar lo que había escrito, 
                             tomando eso en consideración pense en hacer una app que puedas visitar en cualquier momento, en cualquier dispositivo y recordar 
                             los momentos lindos y dificiles que hemos pasados y si tu quieres seguir haciendo crecer esta pagina para tener mas memorias nuestras
