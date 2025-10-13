@@ -11,14 +11,14 @@ function Decisions() {
             id: 1,
             title: "Choice 1",
             description: "Take a time/ no continue together",
-            image: "/images/cards/time.jpg",
+            image: `${process.env.PUBLIC_URL}/images/cards/time.jpg`,
             videoUrl: "https://www.youtube.com/embed/YOUR_VIDEO_ID_1" // Replace with your YouTube video ID
         },
         {
             id: 2,
             title: "Choice 2", 
             description: "Stay together forever",
-            image: "/images/cards/eternal_flame.jpg",
+            image: `${process.env.PUBLIC_URL}/images/cards/eternal_flame.jpg`,
             videoUrl: "https://www.youtube.com/embed/YOUR_VIDEO_ID_2" // Replace with your YouTube video ID
         }
     ];

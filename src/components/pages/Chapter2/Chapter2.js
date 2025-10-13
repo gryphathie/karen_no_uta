@@ -7,7 +7,7 @@ function Chapter2() {
     return (
         <div className="romantic-chapter-container">
             <AudioPlayer 
-                src="/music/chapter2/BORNS - Electric Love.mp3"
+                src={`${process.env.PUBLIC_URL}/music/chapter2/BORNS - Electric Love.mp3`}
                 title="BORNS - Electric Love"
                 autoPlay={false}
                 loop={true}
@@ -19,7 +19,7 @@ function Chapter2() {
                 {/* Chapter header image */}
                 <div className="romantic-chapter-header-image">
                     <img 
-                        src="/images/cards/travel.jpg" 
+                        src={`${process.env.PUBLIC_URL}/images/cards/travel.jpg`} 
                         alt="Chapter 2 - The Travel" 
                         className="romantic-chapter-image"
                     />
@@ -70,7 +70,7 @@ function Chapter2() {
                             <h3 className="romantic-card-title">Art</h3>
                             <div className="romantic-image-container">
                                 <img 
-                                    src="/images/cards/zelda.png" 
+                                    src={`${process.env.PUBLIC_URL}/images/cards/zelda.PNG`} 
                                     alt="Description" 
                                     className="romantic-card-image"
                                 />
@@ -85,7 +85,7 @@ function Chapter2() {
                         <div className="romantic-card-content">
                             <h3 className="romantic-card-title">Special Moment</h3>
                             <p className="romantic-card-text">
-                            <img src="/images/cards/cuarto.jpg" alt="Special Moment" className="romantic-card-image" />
+                            <img src={`${process.env.PUBLIC_URL}/images/cards/cuarto.jpg`} alt="Special Moment" className="romantic-card-image" />
                             </p>
                         </div>
                     </div>
@@ -112,7 +112,7 @@ function Chapter2() {
                 <div className="romantic-cards-container">
                     <div className="romantic-card romantic-footer-card">
                         <div className="romantic-card-content">
-                            <img src="/images/cards/footer.png" alt="Footer" className="footer-image" />
+                            <img src={`${process.env.PUBLIC_URL}/images/cards/footer.png`} alt="Footer" className="footer-image" />
                         </div>
                     </div>
                 </div>

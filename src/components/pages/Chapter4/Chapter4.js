@@ -7,7 +7,7 @@ function Chapter4() {
     return (
         <div className="romantic-chapter-container">
         <AudioPlayer 
-            src="/music/chapter4/Dido - White flag.mp3"
+            src={`${process.env.PUBLIC_URL}/music/chapter4/Dido - White flag.mp3`}
             title="Dido - White flag"
             autoPlay={false}
             loop={true}
@@ -19,7 +19,7 @@ function Chapter4() {
             {/* Chapter header image */}
             <div className="romantic-chapter-header-image">
                 <img 
-                    src="/images/cards/unbound_future.jpg" 
+                    src={`${process.env.PUBLIC_URL}/images/cards/unbound_future.jpg`} 
                     alt="Chapter 4 - Unbound Future" 
                     className="romantic-chapter-image"
                 />
@@ -73,7 +73,7 @@ function Chapter4() {
                         <h3 className="romantic-card-title">Art</h3>
                         <div className="romantic-image-container">
                             <img 
-                                src="/images/cards/flower.png" 
+                                src={`${process.env.PUBLIC_URL}/images/cards/flower.PNG`} 
                                 alt="Description" 
                                 className="romantic-card-image"
                             />
@@ -88,7 +88,7 @@ function Chapter4() {
                     <div className="romantic-card-content">
                         <h3 className="romantic-card-title">Special Moment</h3>
                         <p className="romantic-card-text">
-                            <img src="/images/cards/sky.jpg" alt="Special Moment" className="romantic-card-image" />
+                            <img src={`${process.env.PUBLIC_URL}/images/cards/sky.jpg`} alt="Special Moment" className="romantic-card-image" />
                             Pensé mucho en qué agregar aquí, "un momento especial" como en cada capítulo, pero esta página en particular es más una historia que narra una reflexión personal y creo que esta imagen describe muy bien eso.
                             Una imagen borrosa pero hermosa, de la misma manera que fue ese período, una vista borrosa de algo que amaba y dejé ir, pero que nunca dejó de ser algo lindo, nunca dejó de ser algo que anhelara.
                         </p>
@@ -116,7 +116,7 @@ function Chapter4() {
             <div className="romantic-cards-container">
                 <div className="romantic-card romantic-footer-card">
                     <div className="romantic-card-content">
-                        <img src="/images/cards/footer.png" alt="Footer" className="footer-image" />
+                        <img src={`${process.env.PUBLIC_URL}/images/cards/footer.png`} alt="Footer" className="footer-image" />
                     </div>
                 </div>
             </div>

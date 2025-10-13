@@ -7,7 +7,7 @@ function Chapter1() {
     return (
         <div className="romantic-chapter-container">
             <AudioPlayer 
-                src="/music/chapter1/The Driver Era - A Kiss.mp3"
+                src={`${process.env.PUBLIC_URL}/music/chapter1/The Driver Era - A Kiss.mp3`}
                 title="The Driver Era - A Kiss"
                 autoPlay={false}
                 loop={true}
@@ -19,7 +19,7 @@ function Chapter1() {
                 {/* Chapter header image */}
                 <div className="romantic-chapter-header-image">
                     <img 
-                        src="/images/cards/virtuous_heart.jpg" 
+                        src={`${process.env.PUBLIC_URL}/images/cards/virtuous_heart.jpg`} 
                         alt="Chapter 1 - The Beginning" 
                         className="romantic-chapter-image"
                     />
@@ -65,7 +65,7 @@ function Chapter1() {
                             <h3 className="romantic-card-title">Art</h3>
                             <div className="romantic-image-container">
                                 <img 
-                                    src="/images/cards/medusa.jpg" 
+                                    src={`${process.env.PUBLIC_URL}/images/cards/medusa.JPG`} 
                                     alt="Description" 
                                     className="romantic-card-image-big"
                                 />
@@ -107,7 +107,7 @@ function Chapter1() {
                 <div className="romantic-cards-container">
                     <div className="romantic-card romantic-footer-card">
                         <div className="romantic-card-content">
-                            <img src="/images/cards/footer.png" alt="Footer" className="footer-image" />
+                            <img src={`${process.env.PUBLIC_URL}/images/cards/footer.png`} alt="Footer" className="footer-image" />
                         </div>
                     </div>
                 </div>

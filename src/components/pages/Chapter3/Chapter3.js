@@ -7,7 +7,7 @@ function Chapter3() {
     return (
         <div className="romantic-chapter-container">
         <AudioPlayer 
-            src="/music/chapter3/Taylor Swift - Lover.mp3"
+            src={`${process.env.PUBLIC_URL}/music/chapter3/Taylor Swift - Lover.mp3`}
             title="Taylor Swift - Lover"
             autoPlay={false}
             loop={true}
@@ -19,7 +19,7 @@ function Chapter3() {
             {/* Chapter header image */}
             <div className="romantic-chapter-header-image">
                 <img 
-                    src="/images/cards/fruit.jpg" 
+                    src={`${process.env.PUBLIC_URL}/images/cards/fruit.jpg`} 
                     alt="Chapter 3 - The Lovers" 
                     className="romantic-chapter-image"
                 />
@@ -63,7 +63,7 @@ function Chapter3() {
                         <h3 className="romantic-card-title">Art</h3>
                         <div className="romantic-image-container">
                             <img 
-                                src="/images/cards/espeon.png" 
+                                src={`${process.env.PUBLIC_URL}/images/cards/espeon.PNG`} 
                                 alt="Description" 
                                 className="romantic-card-image"
                             />
@@ -79,7 +79,7 @@ function Chapter3() {
                     <div className="romantic-card-content">
                         <h3 className="romantic-card-title">Special Moment</h3>
                         <p className="romantic-card-text">
-                            <img src="/images/gallery/coco4.jpg" alt="Special Moment" className="romantic-card-image" />
+                            <img src={`${process.env.PUBLIC_URL}/images/gallery/coco4.jpg`} alt="Special Moment" className="romantic-card-image" />
                         </p>
                     </div>
                 </div>
@@ -105,7 +105,7 @@ function Chapter3() {
             <div className="romantic-cards-container">
                 <div className="romantic-card romantic-footer-card">
                     <div className="romantic-card-content">
-                        <img src="/images/cards/footer.png" alt="Footer" className="footer-image" />
+                        <img src={`${process.env.PUBLIC_URL}/images/cards/footer.png`} alt="Footer" className="footer-image" />
                     </div>
                 </div>
             </div>
