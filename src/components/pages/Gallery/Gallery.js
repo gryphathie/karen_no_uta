@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import '../Chapter.css';
+import AudioPlayer from '../../AudioPlayer';
 
 function Gallery() {
     const [expandedCard, setExpandedCard] = useState(null);
@@ -169,6 +170,13 @@ function Gallery() {
 
     return (
         <div className="romantic-chapter-container">
+            <AudioPlayer 
+                src="/music/chapter4/Dreams of absolution.mp3"
+                title="Dreams of absolution"
+                autoPlay={false}
+                loop={true}
+                volume={0.3}
+            />
             <Container>
                 <h1 className="romantic-chapter-title">Gallery</h1>
                 <p className="romantic-card-text-home">
