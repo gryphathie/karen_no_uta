@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/karen_no_uta/static/css/main.2838e9bd.css",
+    "main.js": "/karen_no_uta/static/js/main.f0dcc610.js",
+    "static/js/453.341d84b6.chunk.js": "/karen_no_uta/static/js/453.341d84b6.chunk.js",
+    "static/media/logo.svg": "/karen_no_uta/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/karen_no_uta/index.html",
+    "main.2838e9bd.css.map": "/karen_no_uta/static/css/main.2838e9bd.css.map",
+    "main.f0dcc610.js.map": "/karen_no_uta/static/js/main.f0dcc610.js.map",
+    "453.341d84b6.chunk.js.map": "/karen_no_uta/static/js/453.341d84b6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2838e9bd.css",
+    "static/js/main.f0dcc610.js"
+  ]
+}
